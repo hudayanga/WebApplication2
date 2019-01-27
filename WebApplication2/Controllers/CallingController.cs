@@ -1,5 +1,6 @@
 ﻿using Microsoft.Bot.Builder.Calling;
 using Microsoft.Bot.Connector;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -7,6 +8,8 @@ using WebApplication2.Voice;
 
 namespace WebApplication2.Controllers
 {
+  
+    [RoutePrefix("api/calling")]
     public class CallingController : ApiController
     {
         public CallingController() : base()
